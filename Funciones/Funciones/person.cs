@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Funciones
 {
-    internal class person
+    public class Person
     {
-        protected string ssn = "444-55-6666";
-        protected string name = "John L. Malgraine";
-
-        public virtual void GetInfo()
+        private string _name;
+        public string Name
         {
-            Console.WriteLine("Name: {0}", name);
-            Console.WriteLine("SSN: {0}", ssn);
+            get => _name;
+            set => _name = value;
         }
     }
+    
+    
 }
